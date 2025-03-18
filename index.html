@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-HUB: Dezavantajlı Yol Kullanıcıları İçin Ulaşım Platformu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: rgb(41, 95, 133);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 100px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: rgb(41, 95, 133);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(41, 95, 133);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        },
+        .images2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .images2 img {
+            width: 50%;  /* Set images to 50% of their original/container width */
+            height: auto;  /* Maintain aspect ratio */
+            border-radius: 8px;  /* Optional: rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+        }
+        .images3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .images3 img {
+            width: 100%;  /* Set images to 50% of their original/container width */
+            height: auto;  /* Maintain aspect ratio */
+            border-radius: 8px;  /* Optional: rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 15px; /* Adds spacing between images */
+            justify-items: center;
+        }
+
+        .images img {
+            width: 100%;
+            max-width: 250px; /* Prevents images from getting too large */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gantt-chart {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(41, 95, 133);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="gbb.png" alt="GBB Logo">
+        <span>D-HUB: Dezavantajlı Yol Kullanıcıları İçin Ulaşım Platformu<br><small>Complete Mobility Provider</small></span>
+        <img src="ISSD.jpg" alt="ISSD Logo">
+    </header>
+    <div class="container">
+        
+        <div class="images2">
+            <h2>Stadyumlarda Daha Çok Dezavantajlı Bireyler Görmek İstiyoruz</h2>
+            <img src="Resim1.png" alt="Ana Giris">
+            
+        </div>
+        <div class="images2">
+            <h2>Bütünsel Mobilite Çözümleri İle Mümkün</h2>
+            <img src="dhub4.jpeg" alt="Stadyum Uydu">
+            
+        </div>
+        <div class="section">
+            <h2>Proje Özeti</h2>
+            <p>📌 Türkiye’de yaklaşık <strong>8,5 milyon engelli birey</strong> bulunmaktadır (TÜİK 2023).</p>
+            <p>📌 Bu bireylerin güvenli, erişilebilir ve engelsiz ulaşım altyapısına ihtiyacı vardır.</p>
+            <p>📌 Bunun için uçtan uca mobilite çözümleri gerekmektedir.</p>
+
+            
+            <p><strong>D-HUB</strong>, engelli ve hareket kabiliyeti sınırlı bireylerin şehir içi ulaşımdaki ihtiyaçlarını karşılamak için tasarlanmıştır. Platform:</p>
+            <p>
+                <li>✅ Erişilebilir park yeri yönetimi</li>
+                <li>✅ Yaya önceliği uygulamaları</li>
+                <li>✅ Trafik güvenliği çözümleri sunmaktadır.</li>
+            </p>
+            
+                <p>📌 Gaziantep Şehir Stadyumu Çevresi (33.000 Kişilik Kapasite)</p>
+                <p>📌 Gaziantep Büyükşehir Belediyesi iş birliğiyle hayata geçirilecektir.</p>
+            <p>📌 Engelli bireylerin şehir içinde <strong>bağımsız</strong> ve <strong>güvenli</strong> hareket edebilmesini sağlamak.</p>
+        </div>
+        <div class="section">
+            <h2>Mevcut Durum</h2>
+            <video width="100%" controls>
+                <source src="output.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+        <div class="section">
+            <h2>Mevcut Durum</h2>
+            <p>📌 TOPLAM ALAN 106.000m2 </p>
+            <p>📌 33.000 KOLTUK</p>
+            <p>📌 1000 ARAÇLIK AÇIK OTOPARK KAPASİTESİ</p>
+            <p>📌 300 ARAÇLIK KAPALI OTOPARK KAPASİTESİ</p>
+            <p>📌 GAZIRAY BEYLERBEYI VE STADYUM İSTASYONU</p>
+            <p>📌 NORMAL GUNLERDE 10.000 YOLCU/GÜN, MAÇ GÜNÜ 15.000 YOLCU/GÜN</p>
+        </div>
+        <div class="images2">
+            <h2>Stadyum</h2>
+            <img src="stadyum_top.png" alt="Stadyum Uydu">
+            
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>Proje Çıktıları</h2>
+
+            <h3>1. Erişilebilir Park Yönetim Sistemi</h3>
+            <ul>
+                <li>✅ <strong>Özel park alanları:</strong> Üç otoparkta dezavantajlı bireyler için rezerve edilebilir park alanları oluşturulacak.</li>
+                <li>✅ <strong>Plaka tanıma ve otomatik bariyerler:</strong> Bireylerin park alanlarına sorunsuz erişimi sağlanacak.</li>
+                <li>✅ <strong>Mantar bariyerler:</strong> 50 park alanında, dezavantajlı kullanıcılar için açılıp kapanan bariyerler kullanılacak.</li>
+            </ul>
+
+            <h3>2. Doluluk ve Yaya Yoğunluk Analiz Sistemi</h3>
+            <ul>
+                <li>✅ <strong>Hareketli kameralar ve Bluetooth sensörleri:</strong> 10 otoparkta doluluk ve yaya yoğunluğu analiz edilecek.</li>
+                <li>✅ <strong>Veri entegrasyonu:</strong> Trafik kontrol merkezi ile veri takibi yapılacak ve mobil uygulama üzerinden yayınlanacak.</li>
+            </ul>
+
+            <h3>3. Trafik ve Yaya Yoğunluğu Verisine Dayalı Adaptif Yönetim Senaryoları</h3>
+            <ul>
+                <li>✅ <strong>Yoğunluk verisi analizi:</strong> Kavşaklar ve stratejik noktalarda trafik ve yaya hareketliliği analiz edilerek adaptif senaryolar oluşturulacak.</li>
+                <li>✅ <strong>Yaya önceliği:</strong> Mobil uygulama üzerinden ilgili kavşaklarda yaya önceliği aktif olacak.</li>
+            </ul>
+
+            <h3>4. Simülasyon Tabanlı Güvenlik ve Yoğunluk Senaryoları</h3>
+            <ul>
+                <li>✅ <strong>Simülasyon platformları:</strong> PTV Vissim ve Viswalk ile güvenli tahliye senaryoları oluşturulacak.</li>
+                <li>✅ <strong>Fiziki düzenlemeler:</strong> Dezavantajlı bireylerin stadyuma giriş ve çıkış konforu artırılacak.</li>
+            </ul>
+
+            <h3>5. Mobil Uygulama</h3>
+            <ul>
+                <li>✅ <strong>Anlık bilgiler:</strong> Park doluluk durumu, yaya yoğunluğu haritaları, trafik yoğunluğu gibi bilgiler görüntülenebilecek.</li>
+                <li>✅ <strong>Rezerve ve yönlendirme:</strong> Dezavantajlı bireyler mobil uygulama üzerinden rezerve işlemi yapabilecek.</li>
+                <li>✅ <strong>Sağlık raporu:</strong> Dezavantajlı kullanıcılar sağlık raporları yükleyerek avantajlardan faydalanacak.</li>
+            </ul>
+
+            <h3>6. Engelli Erişimini Destekleyen Merkezi Platform</h3>
+            <ul>
+                <li>✅ <strong>Trafik kontrol merkezi entegrasyonu:</strong> Gaziantep Büyükşehir Belediyesi ile iş birliği yapılarak engelli bireyler için güvenli, bağımsız ve erişilebilir bir ulaşım altyapısı oluşturulacak.</li>
+            </ul>
+
+            <h3>💡 Sonuç</h3>
+            <p><strong>D-HUB</strong>, dezavantajlı bireylerin ulaşım ihtiyaçlarını güvenli ve erişilebilir bir şekilde karşılamak amacıyla tasarlanmıştır.</p>
+        </div>
+
+        <div class="images2">
+            <h2>Dezavantajlı Kullanıcı Öncelikli Kavsaklar</h2>
+            <img src="dhub1.jpeg" alt="Stadyum Uydu">
+            
+        </div>
+        
+        <div class="images2">
+            <h2>Dezavantajlı Kullanıcılar için Park Yeri Rezervazyonu</h2>
+            <img src="dhub2.jpeg" alt="Stadyum Uydu">
+            
+        </div>
+        
+        <div class="images2">
+            <h2>Bluetooth Tabanlı Hareketlilik Analizi</h2>
+            <img src="dhub3.png" alt="Stadyum Uydu">
+            
+        </div>
+        <div class="images2">
+            <h2>Kamera Tabanlı Park Yönetimi</h2>
+            <img src="dhub5.jpg" alt="Stadyum Uydu">
+            
+        </div>
+        <div class="section">
+            <h2>Proje ARGE Yönü</h2>
+
+            <h3>📌 Amaç</h3>
+            <p><strong>Engelli bireylerin kent içi hareketliliğini artırarak erişilebilir ve güvenli bir ulaşım altyapısı oluşturmak.</strong></p>
+
+            <h3>🔹 Teknik Bileşenler</h3>
+            <ul>
+                <li>✅ <strong>Sensör Füzyonu:</strong> Bluetooth sensörler, hareketli kameralar ve plaka tanıma sistemlerinden alınan veriler birleştirilerek, dezavantajlı kullanıcıların hareketliliği analiz edilir.</li>
+                <li>✅ <strong>Adaptif Kavşak Yönetimi:</strong> 3 adaptif kavşak sistemi trafik yoğunluğuna göre dinamik olarak çalışarak, dezavantajlı bireyler için güvenli geçiş sağlar.</li>
+                <li>✅ <strong>Entegre Park Yönetimi:</strong>
+                    <ul>
+                        <li>Mobil uygulama ile rezervasyon</li>
+                        <li>Plaka tanıma ile doğrulama</li>
+                        <li>Mantar bariyerler ile erişim kontrolü</li>
+                        <li>Gerçek zamanlı otopark doluluk takibi</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>📍 Pilot Bölge ve Uygulamalar</h3>
+            <ul>
+                <li>📍 Gaziantep Stadyumu çevresinde pilot uygulama</li>
+                <li>📍 Kavşaklarda anlık sinyal süresi ve geçiş önceliği ayarlaması</li>
+                <li>📍 Otopark doluluk analizleri ve kullanıcı bilgilendirmesi</li>
+            </ul>
+
+            <h3>🔹 Simülasyon Tabanlı Optimizasyon</h3>
+            <ul>
+                <li>✅ <strong>PTV Vissim & Viswalk kullanılarak:</strong></li>
+                <li>Güvenli geçiş stratejileri test edilecek</li>
+                <li>Fiziki düzenleme önerileri geliştirilecek</li>
+            </ul>
+
+            <h3>💡 Sonuç</h3>
+            <p><strong>D-HUB</strong>, dezavantajlı bireyler için bağımsız hareket imkânı sunan, şehirleri daha erişilebilir ve kapsayıcı hale getiren akıllı bir ulaşım yönetim sistemidir. 🚀</p>
+        </div>
+
+        <div class="section">
+            <h2>VISWALK SIMULASYON</h2>
+            <video width="100%" controls>
+                <source src="aleaddin_mevlana_hatti_v6_1.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+        
+        <div class="section">
+            <h2>Yenilikçi Yönü</h2>
+
+            <ul>
+                <li>✅ <strong>Simülasyon Destekli Trafik Yönetimi:</strong> Yoğun maç ve etkinlik günlerinde dezavantajlı kullanıcıların güvenli geçişi için <strong>PTV Vissim & Viswalk</strong> ile dinamik senaryolar test ediliyor.</li>
+                <li>✅ <strong>Adaptif Kavşak ve Yaya Önceliği:</strong> Gerçek zamanlı trafik analizi ile dezavantajlı kullanıcılar için öncelikli yaya geçişi sağlanıyor.</li>
+                <li>✅ <strong>Akıllı Otopark Yönetimi:</strong> Mobil uygulama ile rezervasyon, plaka tanıma ve otomatik bariyer sistemi sayesinde özel park alanlarına sorunsuz erişim sunuluyor.</li>
+            </ul>
+
+            <h3>💡 Sonuç</h3>
+            <p><strong>D-HUB</strong>, dezavantajlı kullanıcıların güvenliğini ve bağımsız hareketliliğini artıran akıllı bir ulaşım yönetim sistemi sunmaktadır. 🚀</p>
+        </div>
+
+        
+        <div class="images">
+            <h2>Mobil Uygulama</h2>
+            <img src="generate_a_mobile_app_interface_which_is_used_by_disabled_people_mobile_app_screen_will_show_the_lo_77w9ee2l39zvbtflvgc9_0.png" alt="Mobil Uygulama Arayüzü 1">
+            <img src="generate_a_mobile_app_interface_which_is_used_by_disabled_people_mobile_app_screen_will_show_the_lo_fttya05thynrz6p8icrz_2.png" alt="Mobil Uygulama Arayüzü 2">
+            <img src="generate_a_mobile_app_interface_which_is_used_by_disabled_people_mobile_app_screen_will_show_the_lo_s98cv10c3v9dcijoodid_0.png" alt="Mobil Uygulama Arayüzü 3">
+            <img src="generate_a_mobile_app_interface_which_is_used_by_disabled_people_mobile_app_screen_will_show_the_lo_4esh34r047erozhsltg0_3.png" alt="Mobil Uygulama Arayüzü 4">
+        </div>
+
+        <div class="section">
+            <h2>1. Alet, Makine, Yazılım ve Ekipman Giderleri</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sıra</th>
+                        <th>Adı/Modeli</th>
+                        <th>Miktarı</th>
+                        <th>Kullanım Dönemi / Süresi</th>
+                        <th>Kullanım Gerekçesi</th>
+                        <th>Kullanım Yeri</th>
+                        <th>Tahmini Bedeli (TL)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bluetooth Tabanlı Tespit Sensörü</td>
+                        <td>10</td>
+                        <td>12 ay</td>
+                        <td>Yaya hareketliliği ve trafik yoğunluğunu izlemek için kullanılacaktır.</td>
+                        <td>Stadyum çevresi, yoğun etkinlik alanları ve trafik noktaları</td>
+                        <td>355,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hareketli Kamera (PTZ)</td>
+                        <td>10</td>
+                        <td>12 ay</td>
+                        <td>Park Yönetimi, yaya ve araç hareketlerini izlemek için kullanılacaktır.</td>
+                        <td>Stadyum çevresi ve otopark alanları</td>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Saha Kenar İşlemcisi</td>
+                        <td>12</td>
+                        <td>12 ay</td>
+                        <td>Kamera yayınlarının işlenerek park yönetimi, araç ve yaya tespitinde kullanımı</td>
+                        <td>Trafik yönetim merkezi ve veri analiz sistemleri</td>
+                        <td>1,022,400</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Park Blok Bariyeri</td>
+                        <td>50</td>
+                        <td>12 ay</td>
+                        <td>Dezavantajlı kullanıcılar için park yeri rezervasyonu</td>
+                        <td>Dezavantajlı otopark yerleri</td>
+                        <td>800,000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Bariyer seti</td>
+                        <td>6</td>
+                        <td>12 ay</td>
+                        <td>Dezavantajlı otopark alanlarını kontrol etmek için</td>
+                        <td>Otopark giriş-çıkış noktaları</td>
+                        <td>373,000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Otopark Plaka Tanıma</td>
+                        <td>6</td>
+                        <td>12 ay</td>
+                        <td>Rezervasyon yapan kullanıcıları tanıyıp bariyer kontrolü sağlamak için</td>
+                        <td>Stadyum çevresi ve otopark giriş-çıkışları</td>
+                        <td>255,600</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Dinamik Kavşak Kontrol Modülü</td>
+                        <td>3</td>
+                        <td>12 ay</td>
+                        <td>Dezavantajlı bireylere öncelik tanıyıp trafik yönetimi sağlamak</td>
+                        <td>Stadyum çevresindeki 3 kritik kavşak</td>
+                        <td>372,750</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Trafik Kameraları</td>
+                        <td>12</td>
+                        <td>12 ay</td>
+                        <td>Kavşakların dinamik yönetimi için veri sağlamak</td>
+                        <td>Stadyum çevresi, kritik kavşakların giriş noktaları</td>
+                        <td>213,000</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Sunucu</td>
+                        <td>1</td>
+                        <td>12 ay</td>
+                        <td>Toplanan verilerin saklanması, işlenmesi ve analiz edilmesi</td>
+                        <td>Trafik yönetim merkezi</td>
+                        <td>284,000</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Pano</td>
+                        <td>5</td>
+                        <td>12 ay</td>
+                        <td>Elektriksel ekipmanların kontrolü ve güvenliği</td>
+                        <td>Stadyum çevresindeki cihaz bağlantı noktaları</td>
+                        <td>134,000</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Switch</td>
+                        <td>5</td>
+                        <td>12 ay</td>
+                        <td>Ağ altyapısının kurulması ve veri iletişiminin sağlanması</td>
+                        <td>Stadyum çevresindeki cihaz bağlantı noktaları</td>
+                        <td>134,000</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>UPS</td>
+                        <td>5</td>
+                        <td>12 ay</td>
+                        <td>Elektrik kesintilerinde sistemlerin sürekliliğini sağlamak</td>
+                        <td>Stadyum çevresindeki cihaz bağlantı noktaları</td>
+                        <td>62,500</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>İş İstasyonu</td>
+                        <td>1</td>
+                        <td>12 ay</td>
+                        <td>33.000 kişilik stadyum simülasyonu için</td>
+                        <td>Ofis ortamı</td>
+                        <td>142,000</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Vissim + Viswalk</td>
+                        <td>1</td>
+                        <td>12 ay</td>
+                        <td>Trafik ve yaya akışı simülasyonları için</td>
+                        <td>Simülasyon ve planlama süreçleri</td>
+                        <td>1,065,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6" style="text-align: right;">Toplam</th>
+                        <th>5,217,250 TL</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        
+        <div class="section">
+            <h2>2. Personel Giderleri</h2>
+            <h3>Proje Yöneticisi ve Projede Görev Alan Personele Ödenecek Ücretler</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sıra</th>
+                        <th>Personelin Mesleği / Unvanı</th>
+                        <th>Uzmanlık Alanı</th>
+                        <th>Projedeki Görevi</th>
+                        <th>İstihdam Süresi</th>
+                        <th>Kişi Sayısı</th>
+                        <th>Kişi Başına Ödenecek Ücret (TL)</th>
+                        <th>Toplam Ücret (TL)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>İşletmeci / Proje Sorumlusu</td>
+                        <td>Ulusal ve uluslararası proje yönetimi, bütçe planlaması, finansal takip, sosyal medya ve web içerik yönetimi</td>
+                        <td>Proje Yürütücüsü</td>
+                        <td>12 ay / 6 adam-ay</td>
+                        <td>1</td>
+                        <td>96,600</td>
+                        <td>597,600</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>İnşaat Mühendisi / Trafik Mühendisi</td>
+                        <td>Çok modlu trafik simülasyonu, kavşak ve koridor tasarımı, akıllı ulaşım sistemleri projelendirme</td>
+                        <td>Kıdemli Trafik Mühendisi</td>
+                        <td>12 ay / 12 adam-ay</td>
+                        <td>1</td>
+                        <td>137,500</td>
+                        <td>1,650,000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bilgisayar Programcısı / Yazılım Uzmanı</td>
+                        <td>Express, NestJS, PostgreSQL, Golang, .NET, Java, Docker, Redis, RabbitMQ</td>
+                        <td>Yazılım Uzmanı</td>
+                        <td>12 ay / 12 adam-ay</td>
+                        <td>1</td>
+                        <td>189,000</td>
+                        <td>2,268,000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Geomatik Mühendisi / Harita Mühendisi</td>
+                        <td>Veri analizi ve haritalama</td>
+                        <td>Veri Analiz Mühendisi</td>
+                        <td>12 ay / 8 adam-ay</td>
+                        <td>1</td>
+                        <td>90,000</td>
+                        <td>720,000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Şehir ve Bölge Plancısı / Trafik Mühendisi</td>
+                        <td>Ulaşım ağı modelleme, trafik simülasyonu, sinyal koordinasyonu, kentsel planlama</td>
+                        <td>Trafik Mühendisi</td>
+                        <td>12 ay / 7 adam-ay</td>
+                        <td>1</td>
+                        <td>126,500</td>
+                        <td>885,000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Şehir ve Bölge Plancısı / Trafik Mühendisi</td>
+                        <td>Ulaşım modeli, trafik sinyalizasyon tasarımı, kavşak tasarımı, sinyal süre optimizasyonu</td>
+                        <td>Trafik Mühendisi</td>
+                        <td>12 ay / 6 adam-ay</td>
+                        <td>1</td>
+                        <td>67,000</td>
+                        <td>402,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" style="text-align: right;">Toplam</th>
+                        <th>6,523,100 TL</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>3. Danışmanlık ve Hizmet Alım Giderleri</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sıra</th>
+                        <th>Adı</th>
+                        <th>Miktarı</th>
+                        <th>Amacı</th>
+                        <th>Dönemi ve Süresi</th>
+                        <th>Teklif Alınan Hizmet Bedeli (TL)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Doç. Dr. Berk Anbaroğlu</td>
+                        <td>1</td>
+                        <td>Farklı trafik ve yaya akış senaryolarının simülasyon araçlarıyla analiz edilerek en verimli boşaltma yönteminin belirlenmesi.</td>
+                        <td>12 ay</td>
+                        <td>300,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bursiyer (Feridun Tolga Solak)</td>
+                        <td>1</td>
+                        <td>Simülasyon ortamında analizlerin gerçekleştirilmesi ve farklı senaryoların değerlendirilmesi.</td>
+                        <td>12 ay</td>
+                        <td>57,600</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5" style="text-align: right;">Toplam</th>
+                        <th>357,600 TL</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        
+        <div class="section">
+            <h2>4. Proje Bütçesi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Açıklama</th>
+                        <th>Tutar (TL)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Proje Toplam Bütçesi</strong></td>
+                        <td>12,097,950</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Destek Talebi Miktarı</strong></td>
+                        <td>9,073,462.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        
+        <div class="images3">
+            <h2>Proje Takvimi</h2>
+            <img src="gant.png" alt="GANT">
+            
+        </div>
+        
+        
+    </div>
+    <footer>&copy; 2025 D-HUB | Tüm Hakları Saklıdır | Complete Mobility Provider</footer>
+</body>
+</html>
